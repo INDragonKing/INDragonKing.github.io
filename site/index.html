@@ -3,18 +3,49 @@
 <head>
 	<title>Form</title>
 	<meta charset="utf-8" name="meta tag">
+	<style type="text/css">
+		/*first way to align input boxes */
+		/*.basic{
+			width: 500px;
+			clear: both;
+		}
+
+		.basic input{
+			width: 100%;
+			clear: both;
+		}
+		/*Second Way to align input boxes */
+		/*
+		label{
+			display: inline-block;
+			width: 100px;
+			text-align: right;
+		}*/
+		/*Third way to align input boxes*/
+		label{
+			display: block;
+			float: left;
+			width: 10%;
+		}
+
+		.basic input{
+			width: 50%;
+		}
+	</style>
 </head>
 <body style="background-color: #555 ; color: #fff">
   <h1 style="color: #999">Form</h1>
 	<div class="basic">
-		Name:
-			<input type="box" name="Name">
-		<br>
-		Roll No:
-			<input type="box" name="Roll">
-		<br>
-		Stream:
-			<input type="box" name="Stream">
+		<form>
+			<label>Name:</label>
+				<input type="box" name="Name">
+			<br>
+			<label>Roll No:</label>
+				<input type="box" name="Roll">
+			<br>
+			<label>Stream:</label>
+				<input type="box" name="Stream">
+		</form>
 	</div>
 </body>
 </html>
